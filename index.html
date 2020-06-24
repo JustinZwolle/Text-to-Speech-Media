@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Text-to-Speech app by Justin Zwolle</title>
+    </head>
+    <body>
+        <div id="app-container">
+
+            <!-- header text -->
+            <h3>Justin's</h3>
+            <h1>Text-To-Speech</h1>
+            <p>
+                Hey there, this is my <span style="font-family: 'Oswald', sans-serif; text-decoration: underline; font-weight: 700;">TTS</span> app,<br>
+                you're welcome to try it out for yourself!
+            </p>
+
+            <!-- text-input area -->
+            <div id="input-container">
+                <textarea id="text-input" placeholder="Start typing over here.."></textarea>
+            </div>
+
+            <!-- button, only active when text input detected -->
+            <div id="control-container">
+                <button disabled="true" id="play-btn">play</button>
+            </div>
+
+            <!-- invisible till error is detected -->
+            <div id="error-msg"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
